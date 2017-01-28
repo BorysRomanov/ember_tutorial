@@ -26,12 +26,6 @@ test('should redirect to rentals route', function (assert) {
     assert.equal(currentURL(), '/rentals', 'should redirect automatically');
   });
 });
-test('should redirect to rentals route', function (assert) {
-  visit('/');
-  andThen(function() {
-    assert.equal(currentURL(), '/rentals', 'should redirect automatically');
-  });
-});
 test('should list available rentals.', function (assert) {
   visit('/');
   andThen(function() {
