@@ -1,0 +1,13 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Rentals list</h2>
+    <ol class="results">
+        {{#each model as |modelUnit|}}
+      <li>
+            <strong>Type:</strong> {{modelUnit.type}}
+            <strong>Location:</strong>
+            {{#link-to "rentals.show" modelUnit}} {{modelUnit.city}} {{/link-to}}
+          </li>
+      {{/each}}
+    </ol>
+</div>

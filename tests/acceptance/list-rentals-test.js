@@ -3,7 +3,7 @@ import moduleForAcceptance from 'super-rentals/tests/helpers/module-for-acceptan
 import Ember from 'ember';
 
 let StubMapsService = Ember.Service.extend({
-  getMapElement() {
+  getMapElement () {
     return document.createElement('div');
   }
 });
@@ -15,23 +15,6 @@ moduleForAcceptance('Acceptance | list rentals', {
   }
 });
 
-test('should redirect to rentals route', function (assert) {
-});
-
-test('should list available rentals.', function (assert) {
-});
-
-test('should link to information about the company.', function (assert) {
-});
-
-test('should link to contact information.', function (assert) {
-});
-
-test('should filter the list of rentals by city.', function (assert) {
-});
-
-test('should show details for a specific rental', function (assert) {
-});
 test('should redirect to rentals route', function (assert) {
   visit('/');
   andThen(function() {
